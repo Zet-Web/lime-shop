@@ -1,0 +1,23 @@
+@import ../privatepage.module
+
+.companyItem
+	border-radius: var(--border-radius)
+	padding: var(--space-s)
+	border: 1px solid var(--color-control-bg-border-default)
+	width: 100%
+	&:hover
+		background: var(--color-bg-ghost)
+		border: 1px solid var(--color-bg-ghost)
+
+.selector
+	display: grid
+	row-gap: var(--space-2xl)
+	width: 100%
+
+.main
+	@extend .tabContent
+	padding: 5% 33%
+	@media screen and (max-width: 1024px)
+		padding: 5% 30%
+	@media screen and (max-width: 800px)
+		padding: 5% 25%

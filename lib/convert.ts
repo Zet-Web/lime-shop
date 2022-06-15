@@ -1,0 +1,1 @@
+export const yesNo = (v?: boolean) => v == undefined ? '' : v ? 'Да' : 'Нет'

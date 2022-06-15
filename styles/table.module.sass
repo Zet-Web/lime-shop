@@ -1,0 +1,29 @@
+@mixin borderHeaderTop
+	> div[class=TableHeader-Row]
+		> div[class^=TableCell]
+			border-top: var(--table-border)
+
+
+@mixin align
+	> div
+		padding: 0 var(--cell-padding-horizontal) 0 0
+		justify-content: start
+	button
+		align-self: center
+
+
+
+@mixin lastColumn
+	div[class^=Table-CellsRow]
+		> div:last-child
+			> div
+				padding: 0 var(--cell-padding-horizontal) 0 0
+				justify-content: end
+			button
+				align-self: center
+
+
+.lastColumn
+	@include lastColumn
+
+
